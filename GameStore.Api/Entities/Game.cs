@@ -1,17 +1,17 @@
-
-namespace GameStore.Api.Entities;
-
-public class Game
+namespace GameStore.Api.Entities
 {
-    public int Id { get; set; }
-    public required string Name { get; set; }
-    // string? means its null,as its ternary operator and it gives only true value and its null
+    public class Game
+    {
+        public int Id {get; set;}
 
-    public required string Genre { get; set; }
+        public required string Name { get; set; }
 
-    public decimal Price { get; set; }
+        public required string Genre { get; set; }
 
-    public DateTime ReleaseDate { get; set; }
+        public decimal Price { get; set; }
 
-    public required string ImageUri {get; set;}   
+        public DateTime ReleaseDate { get; set; }
+
+        public required string ImageUri { get; set; }
+    }
 }
